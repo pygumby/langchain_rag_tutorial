@@ -1,5 +1,3 @@
-langchain-text-splitters
-langchain-community
 langgraph
 
 # Chat model
@@ -12,4 +10,8 @@ langchain[openai]
 langchain-core
 
 # Indexing - Loading documents
+langchain-community
 beautifulsoup4
+
+# Indexing - Splitting documents
+langchain-text-splitters

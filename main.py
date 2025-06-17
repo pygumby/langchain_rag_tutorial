@@ -10,9 +10,13 @@ from langchain_openai import OpenAIEmbeddings
 # Vector store
 from langchain_core.vectorstores import InMemoryVectorStore
 
-# Indexing – Loading documents
+# Indexing - Loading documents
 from langchain_community.document_loaders import WebBaseLoader
 import bs4
+
+# Indexing - Splitting documents
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+
 
 if not os.environ.get("GOOGLE_API_KEY"):
     os.environ["GOOGLE_API_KEY"] = getpass.getpass("Enter API key for Google Gemini: ")
@@ -34,4 +38,13 @@ docs = loader.load()
 
 assert len(docs) == 1  # Expecting exactly one document to be loaded
 print(f"Total characters: {len(docs[0].page_content)}")
-print(docs[0].page_content[:500])
+# print(docs[0].page_content[:500])
+
+text_splitter = RecursiveCharacterTextSplitter(
+    chunk_size=1000,  # Chunk size (characters)
+    chunk_overlap=200,  # Chunk overlap (characters)
+    add_start_index=True,  # Track index in original document
+)
+all_splits = text_splitter.split_documents(docs)
+
+print(f"Split blog post into {len(all_splits)} sub-documents.")
