@@ -1,4 +1,7 @@
 {
+    // Color theme
+    "workbench.colorTheme": "GitHub Dark",
+
     // Font
     "editor.fontFamily": "JetBrains Mono, Menlo, monospace",
     "terminal.integrated.fontFamily": "JetBrains Mono, Menlo, monospace",

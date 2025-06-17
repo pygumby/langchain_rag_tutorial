@@ -12,6 +12,7 @@
         "ms-python.black-formatter",
 
         // Various
-        "github.copilot"
+        "github.copilot",
+        "github.github-vscode-theme",
     ]
 }
