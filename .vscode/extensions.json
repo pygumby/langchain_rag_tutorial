@@ -1,0 +1,17 @@
+{
+    "recommendations": [
+        // Python language support
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.debugpy",
+
+        // Linting
+        "ms-python.pylint",
+
+        // Formatting
+        "ms-python.black-formatter",
+
+        // Various
+        "github.copilot"
+    ]
+}
