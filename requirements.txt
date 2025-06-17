@@ -10,3 +10,6 @@ langchain[openai]
 
 # Vector store
 langchain-core
+
+# Indexing - Loading documents
+beautifulsoup4
