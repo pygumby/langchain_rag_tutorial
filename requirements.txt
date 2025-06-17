@@ -1,0 +1,12 @@
+langchain-text-splitters
+langchain-community
+langgraph
+
+# Chat model
+langchain[google-genai]
+
+# Embeddings model
+langchain[openai]
+
+# Vector store
+langchain-core
