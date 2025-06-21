@@ -1,9 +1,6 @@
 langgraph
 
-# Chat model
-langchain[google-genai]
-
-# Embeddings model
+# Chat and embeddings models
 langchain[openai]
 
 # Vector store
