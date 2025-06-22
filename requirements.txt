@@ -1,4 +1,6 @@
 langgraph
+langchain-core
+
 
 # Chat and embeddings models
 langchain[openai]
@@ -9,6 +11,3 @@ beautifulsoup4
 
 # Indexing - Splitting documents
 langchain-text-splitters
-
-# Indexing - Storing documents
-langchain-core
