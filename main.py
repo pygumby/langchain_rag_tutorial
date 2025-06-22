@@ -7,15 +7,15 @@ from langchain.chat_models import init_chat_model
 # Embeddings model
 from langchain_openai import OpenAIEmbeddings
 
-# Vector store
-from langchain_core.vectorstores import InMemoryVectorStore
-
 # Indexing - Loading documents
 from langchain_community.document_loaders import WebBaseLoader
 import bs4
 
 # Indexing - Splitting documents
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+
+# Indexing - Storing documents
+from langchain_core.vectorstores import InMemoryVectorStore
 
 
 if not os.environ.get("OPENAI_API_KEY"):
@@ -45,3 +45,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 all_splits = text_splitter.split_documents(docs)
 
 print(f"Split blog post into {len(all_splits)} sub-documents.")
+
+# Embed and store chunks
+document_ids = vector_store.add_documents(documents=all_splits)
+# print(document_ids[:3])

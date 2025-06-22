@@ -3,12 +3,12 @@ langgraph
 # Chat and embeddings models
 langchain[openai]
 
-# Vector store
-langchain-core
-
 # Indexing - Loading documents
 langchain-community
 beautifulsoup4
 
 # Indexing - Splitting documents
 langchain-text-splitters
+
+# Indexing - Storing documents
+langchain-core
