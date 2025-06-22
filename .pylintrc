@@ -1,2 +1,3 @@
 [MESSAGES CONTROL]
-disable = ungrouped-imports,
+disable = invalid-name,
+          ungrouped-imports,
