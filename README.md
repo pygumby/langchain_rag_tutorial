@@ -1,2 +1,2 @@
 # langchain_rag_tutorial
-Me following along [LangChain’s RAG tutorial](https://python.langchain.com/docs/tutorials/rag/)
+Me following along the [LangChain RAG tutorial for Python](https://python.langchain.com/docs/tutorials/rag/)
