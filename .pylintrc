@@ -1,3 +1,5 @@
 [MESSAGES CONTROL]
 disable = invalid-name,
           ungrouped-imports,
+          wrong-import-order,
+          duplicate-code,
