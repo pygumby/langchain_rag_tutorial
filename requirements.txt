@@ -1,7 +1,6 @@
 langgraph
 langchain-core
 
-
 # Chat and embeddings models
 langchain[openai]
 
