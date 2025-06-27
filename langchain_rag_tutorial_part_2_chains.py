@@ -1,4 +1,4 @@
-"""LangChain RAG tutorial, part 2"""
+"""LangChain RAG tutorial, part 2, chains"""
 
 import getpass
 import os
